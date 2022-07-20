@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">User <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="post.html">Post</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="album.html">Album</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="todos.html">Todos</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container-fluid">
+        <!-- Loading -->
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+        <div class="form-container">
+            Enter User Value : <input type="number" id="id-input" placeholder="Enter User Id">
+            <button id="submit-btn">GET</button>
+        </div>
+
+        <div class="display-output"></div>   
+    </div> 
+    
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="post.js"></script>
+</body>
+</html>
